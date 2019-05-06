@@ -1,0 +1,39 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "This is my professional portfolio. It uses AWS and ReactJS.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "local-web-server": "^2.6.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parkand1/my-portfolio.git"
+  },
+  "author": "Andrew Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parkand1/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/parkand1/my-portfolio#readme",
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/preset-react"
+    ]
+  }
+}
