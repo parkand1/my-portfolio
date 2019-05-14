@@ -27,3 +27,9 @@ CDN - CloudFront
 CI/CD Pipeline - CodeBuiild/CodePipeline
 
 FaaS - Lambda
+
+Cross-Browser Compatability - Babel
+
+Bundling and Asset Management - Webpack
+
+Packget Management - NPM
