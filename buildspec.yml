@@ -5,6 +5,9 @@ phases:
     commands:
       - npm install
       - npm test
+  install:
+      runtime-versions:
+          - nodejs: 10
   build:
       commands:
           - npm run webpack
