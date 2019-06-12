@@ -1,13 +1,13 @@
-version: 0.1
+version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      - nodejs: 6.9
   pre_build:
     commands:
       - npm install
       - npm test
-  install:
-      runtime-versions:
-          - nodejs: 6.9
   build:
       commands:
           - npm run webpack
