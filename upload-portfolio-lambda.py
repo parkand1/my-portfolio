@@ -6,11 +6,11 @@ import zipfile
 
 def lambda_handler(event, context):
     sns = boto3.resource('sns')
-    topic = sns.Topic('arn:aws:sns:us-west-2:370032281567:deployPortfolioTopic')
+    topic = sns.Topic('arn:aws:sns:us-east-1:370032281567:deployPortfolioTopic:baa8b964-8b35-43df-83f4-4afd49a0d11c')
 
 
     location = {
-        "bucketName": 'codebuildandrewpark',
+        "bucketName": 'andrewparkportfolio.info',
         "objectKey": 'portfoliobuild.zip'
     }
 
@@ -25,7 +25,7 @@ def lambda_handler(event, context):
         print "Building portfolio from " + str(location)
         s3 = boto3.resource('s3', config=Config(signature_version='s3v4'))
 
-        portfolio_bucket = s3.Bucket('andrewpark.io')
+        portfolio_bucket = s3.Bucket('andrewparkportfolio.info')
         build_bucket = s3.Bucket(location["bucketName"])
 
         portfolio_zip = StringIO.StringIO()
