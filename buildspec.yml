@@ -18,7 +18,3 @@ artifacts:
     - styles/main.css
     - images/*
     - dist/bundle.js
-  secondary-artifacts:
-    artifactIdentifier:
-      name: andrewparkportfolioCodePipeline
-      discard-paths: yes
