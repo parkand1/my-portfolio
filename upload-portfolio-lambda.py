@@ -1,5 +1,5 @@
+import botocore
 import boto3
-import botocore.session
 from botocore.client import Config
 import StringIO
 import zipfile
@@ -22,7 +22,7 @@ def lambda_handler(event, context):
                     location = artifact["location"]["s3Location"]
 
         print "Building portfolio from " + str(location)
-        s3 = boto3.resource('s3', config=Config(signature_version='s3v4')
+        s3 = boto3.resource('s3', config=botocore.client.Config(signature_version='s3v4')
 
         portfolio_bucket = s3.Bucket('andrewparkportfolio.info')
         build_bucket = s3.Bucket(location["bucketName"])
