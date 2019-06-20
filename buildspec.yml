@@ -18,3 +18,13 @@ artifacts:
     - styles/main.css
     - images/*
     - dist/bundle.js
+    - __tests__/*
+    - js/*
+    - babel.html
+    - buildspec.yml
+    - package.json
+    - react.html
+    - README.md
+    - upload-portfolio-lambda.py
+    - webpackconfig.js
+    - .git/*
